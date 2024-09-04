@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <img  >
+    <script>
+        let myDiv=document.createElement("div")
+        myDiv.style.border="2px solid black"
+        myDiv.style.height="500px"
+        myDiv.style.width="400px"
+        myDiv.style.backgroundImage="url(./bgimag.jpg)"
+        myDiv.style.backgroundSize="cover"
+        document.body.appendChild(myDiv)
+
+        let title=document.createElement("h1")
+        title.innerHTML="Dellotite"
+        title.style.marginLeft="50px"
+        title.style.color="orange"
+        myDiv.appendChild(title)
+
+        let img=document.getElementsByTagName("img")
+        img[0].setAttribute("src","./vk image.webp");
+        img[0].setAttribute("height","100")
+        img[0].style.width="110px"
+        img[0].style.marginLeft="120px";
+        img[0].style.display="block"
+        img[0].style.marginTop="100px"
+        img[0].style.borderRadius="400px"
+        myDiv.appendChild(img[0])
+
+        let name=document.createElement("p")
+        name.innerHTML=" Name: Jhon Mathiew"
+        name.style.marginLeft="100px"
+        name.style.marginTop="20px"
+        myDiv.appendChild(name)
+
+        let name1=document.createElement("p")
+        name1.innerHTML="Designation:Graphic Designer"
+         name1.style.marginLeft="100px"
+        myDiv.appendChild(name1)
+
+        let name2=document.createElement("p")
+        name2.innerHTML="Email id: jhon12@gmail.com"
+        name2.style.marginLeft="100px"
+        myDiv.appendChild(name2)
+
+        let img1=document.createElement("img");
+        img1.setAttribute("src","./barcode1.jpeg");
+        img1.style.height="50px";
+        img1.style.width="170px";
+        img1.style.marginLeft="100px"
+        myDiv.appendChild(img1)
+ 
+        
+    </script>
+    
+</body>
+</html> 
