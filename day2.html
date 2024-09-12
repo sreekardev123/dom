@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <img>
+    <script>
+        let myDiv=document.createElement("div")
+        myDiv.style.border="2px solid black"
+        myDiv.style.height="500px"
+        myDiv.style.width="580px"
+        myDiv.style.backgroundImage="url(./bk.webp)"
+        document.body.appendChild(myDiv)
+
+        let img=document.getElementsByTagName("img")
+        img[0].setAttribute("src","./ganesh.png")
+        img[0].style.height="300px"
+        img[0].style.width="300px"
+        img[0].style.marginLeft="100px"
+        img[0].style.marginTop="35px"
+        myDiv.appendChild(img[0])
+
+        let img1=document.createElement("img")
+         img1.setAttribute("src","./3.jpg")
+         img1.style.height="400px"
+         img1.style.width="580px"
+         img1.style.marginTop="-25px"
+         myDiv.appendChild(img1)
+
+         
+         let title=document.createElement("h1")
+        title.innerHTML="HAPPY GANESH CHATURTHI"
+        title.style.color="red"
+        title.style.marginLeft="50px"
+        title.style.marginTop="-50px"
+         myDiv.appendChild(title)
+
+         
+
+    </script>
+    
+</body>
+</html>
